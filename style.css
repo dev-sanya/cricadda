@@ -1,0 +1,281 @@
+
+/*
+@media(max-width: 800px){
+  .hideOnMobile{
+    display:none;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}*/
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+  margin: 90px;
+  font-size: 18px;
+  
+}
+
+a:hover{
+  background-color:white;
+  color:black ;
+}
+#navv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  list-style-type: none;
+  
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right:20px ;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  
+}
+#welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+#update{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+#schedule{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative;
+  top: 40px;  
+  font-size: 30px;
+}
+.table tr th{
+  font-size: 20px;
+  
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color:#333;
+}
+nav a:hover{
+  background-color: #f5f5f5;
+}
+
+/*.sidebar{
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #333;
+  backdrop-filter: blur;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #f5f5f5;
+}*/
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  color: #333;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.team img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.team h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news h3 {
+  margin-top: 0;
+}
+
+.news p {
+  color: #555;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding-bottom:20px ;
+  line-height: 25px;
+  margin-top: 50px;
+}
+footer p {
+  margin: 10px 0;
+}
+
+.bar , .cross,#check{
+  display: none;
+}
+
+@media (max-width:660px){
+  
+  #navv{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-evenly;
+      font-size: 25px;
+      width: 60%;
+      height: 100vh;
+      position: fixed;
+      top:0;
+      left: -100%;
+      z-index: 0;
+      background-color:#333;
+      transition: all 0.4s ease-in-out;
+      padding-top: 120px;
+      z-index: 100;
+  }
+
+  *{
+      padding: 0;
+      margin: 0%;
+      
+  }
+  .crickett{
+      z-index: 101;
+  }
+  .container{
+      width: 120%;
+      
+  }
+  .footer{
+      width: 120%;
+  }
+
+  #welcome{
+      width: 120%;
+  }
+  
+  .containerr{
+      width: 100%;
+      text-align: center;
+  }
+  #update{
+      position: relative;
+      left: 40px;
+      top: 10px;       
+  }
+  #schedule{
+      position: relative;
+      left: 40px;
+  }
+  .table{
+      position: relative;
+      left: 10px;
+  }
+  .bar , .cross {display: block;}
+  #check:checked ~ #navv {left: 0;}
+  #check{
+      display: none;
+  }
+  .bar{
+      position: absolute;
+      left: 20px;
+      z-index: 1000;
+  }
+}
